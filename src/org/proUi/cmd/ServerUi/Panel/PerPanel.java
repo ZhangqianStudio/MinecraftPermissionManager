@@ -849,7 +849,7 @@ public class PerPanel extends javax.swing.JPanel {
 
             new NewG(listModel2.get(jList2.getSelectedIndex()).toString(), list, this).setVisible(true);
         } else {
-            send("请先选择一个世界\n权限组必须要建立在一个世界里面，意思就是这个世界的权限组。所以您必须选择先选择一个世界，再进行编辑。");
+            send("请先选择一个世界\n权限组必须要建立在一个世界里面。\n您必须选择先选择一个世界，再进行编辑。");
         }
 
     }//GEN-LAST:event_jButton3ActionPerformed

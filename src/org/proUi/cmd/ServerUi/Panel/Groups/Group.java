@@ -60,8 +60,8 @@ public class Group {
            
         } catch (IOException ex) {
             JOptionPane.showMessageDialog(null,
-                    "保存时出错！ 异常: " + ex.toString(), "信息", JOptionPane.INFORMATION_MESSAGE);
-            System.err.println("=====================保存出错！49=====================");
+                    "保存时出错！ 异常: " + ex.toString(), "Warning", JOptionPane.INFORMATION_MESSAGE);
+            System.err.println("=====================保存出错=错误代码:49=====================");
             ex.printStackTrace();
         }
     }
@@ -85,11 +85,11 @@ public class Group {
             System.out.println("保存 " + g.name + " 组设置成功√");
 
             //  JOptionPane.showMessageDialog(null,
-            //       "权限组 " + g.name + " 在保存成功！ \n路径: " + path, "信息", JOptionPane.INFORMATION_MESSAGE);
+            //       "权限组 " + g.name + " 在保存成功！ \n路径: " + path, "Warning", JOptionPane.INFORMATION_MESSAGE);
         } catch (IOException ex) {
             JOptionPane.showMessageDialog(null,
-                    "保存时出错！ 异常: " + ex.toString(), "信息", JOptionPane.INFORMATION_MESSAGE);
-            System.err.println("=====================保存出错！49=====================");
+                    "保存时出错！ 异常: " + ex.toString(), "Warning", JOptionPane.INFORMATION_MESSAGE);
+            System.err.println("=====================保存出错=错误代码:49=====================");
             ex.printStackTrace();
         }
     }
@@ -117,7 +117,7 @@ public class Group {
         } catch (IOException ex) {
             Logger.getLogger(Group.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null,
-                    "保存配置时出错。可能文件被占用。\n 异常: " + ex.toString(), "信息", JOptionPane.INFORMATION_MESSAGE);
+                    "保存配置时出错。可能文件被占用。\n 异常: " + ex.toString(), "Warning", JOptionPane.INFORMATION_MESSAGE);
         }
         for (MyGroup g : list) {
             saveGroups(path, g);

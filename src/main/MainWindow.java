@@ -24,24 +24,24 @@ public class MainWindow extends javax.swing.JFrame {
         initComponents();
         new Ui().addClassUi(this);
         if(!ifFile("/plugins/GroupManager/globalgroups.yml")){
-            tishi2.setText("很抱歉！您无法使用本编辑器.\n因为您的Minecraft服务器我们没有办法检测到 "+System.getProperty("user.dir") + 
+            tishi2.setText("很抱歉！您无法使用本编辑器.\n因为我们无法在您的Minecraft服务器中检测到 "+System.getProperty("user.dir") + 
                     "/plugins/GroupManager/globalgroups.yml 文件\n  可能是因为您未安装 Essentials基础插件和GroupManager权限管理插件的缘故。\n"
-                    + "     解决方法: 尝试安装Essentials基础插件和GroupManager权限管理插件，如果您是已经安装了，那么请重启一次服务器，然后关闭服务器，再使用一次本程序！");
+                    + "     解决方法: 尝试安装Essentials基础插件和GroupManager权限管理插件，并重启服务器，再使用本程序");
              JOptionPane.showMessageDialog(null,
  "未检测到配置文件，运行失败！请查看具体信息！", "系统信息", JOptionPane.ERROR_MESSAGE);
             return;
         }
         if(!ifFile("/plugins/GroupManager/config.yml")){
-            tishi2.setText("很抱歉！您无法使用本编辑器.\n因为您的Minecraft服务器我们没有办法检测到 "+System.getProperty("user.dir") + 
+            tishi2.setText("很抱歉！您无法使用本编辑器.\n因为我们无法在您的Minecraft服务器中检测到 "+System.getProperty("user.dir") + 
                     "/plugins/GroupManager/config.yml 文件\n    可能是因为您未安装 Essentials基础插件和GroupManager权限管理插件的缘故。\n"
-                    + "     解决方法: 尝试安装Essentials基础插件和GroupManager权限管理插件，如果您是已经安装了，那么请重启一次服务器，然后关闭服务器，再使用一次本程序！");
+                    + "     解决方法: 尝试安装Essentials基础插件和GroupManager权限管理插件，并重启服务器，再使用本程序");
                          JOptionPane.showMessageDialog(null,
  "未检测到配置文件，运行失败！请查看具体信息！", "系统信息", JOptionPane.ERROR_MESSAGE);
             return;
         }
         jLabel7.setText("检测完毕√: 您的Minecraft服务器支持本编辑器编辑权限，您可以正常使用！");
         jLabel7.setForeground(Color.GREEN);
-        tishi2.setText("所需文件存在√\n请确保您的Essentials基础插件套集正常运行，本插件将编辑GroupManager权限管理插件的配置文件。\n强烈建议您在服务器关闭之时编辑，编辑完毕之后必须重新启动服务器！");
+        tishi2.setText("所需文件存在√\n请确保您的Essentials基础插件套集正常运行，本插件将编辑GroupManager权限管理插件的配置文件。\n强烈建议您在服务器关闭之后编辑。编辑完毕之后必须重新启动服务器！");
         
         
         jTabbedPane1.add("权限编辑器", pe);

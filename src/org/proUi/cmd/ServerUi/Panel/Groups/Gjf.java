@@ -44,7 +44,7 @@ public class Gjf extends javax.swing.JFrame {
         if (config == null) {
             System.err.println("Config Object is Null");
             JOptionPane.showMessageDialog(null,
-                    "十分抱歉！全局权限组编辑时读取配置失败，请检查" + main.Main.yunStr + "/plugins/GroupManager/globalgroups.yml" + " 文件是否存在！", "运行时出错！", JOptionPane.ERROR_MESSAGE);
+                    "十分抱歉，全局权限组编辑时读取配置失败，请检查" + main.Main.yunStr + "/plugins/GroupManager/globalgroups.yml" + " 文件是否存在！", "运行时出错！", JOptionPane.ERROR_MESSAGE);
         }
         List<String> s = config.getStringList("groups." + name + ".permissions");
         for (String str : s) {
@@ -138,7 +138,7 @@ public class Gjf extends javax.swing.JFrame {
         } catch (IOException ex) {
             Logger.getLogger(Gjf.class.getName()).log(Level.SEVERE, null, ex);
              JOptionPane.showMessageDialog(null,
-                    "十分抱歉！保存配置时失败！，请检查" + main.Main.yunStr + "/plugins/GroupManager/globalgroups.yml" + " 文件是否存在！", "运行时出错！", JOptionPane.ERROR_MESSAGE);
+                    "十分抱歉，保存配置时失败！，请检查" + main.Main.yunStr + "/plugins/GroupManager/globalgroups.yml" + " 文件是否存在！", "运行时出错！", JOptionPane.ERROR_MESSAGE);
         }
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
